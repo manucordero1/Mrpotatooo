@@ -12,7 +12,7 @@ body{
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1.2rem;
 	min-height: 100%; 
-	background-color: #4854A3;
+	background-color: #4856A3;
 	 
 }
 
@@ -33,6 +33,7 @@ body{
 .header{
 	grid-area: header;
 	display: flex;
+	justify-content: center;
 }
 .logo{
 	grid-area: logo;
@@ -46,6 +47,7 @@ body{
 	font-family: Arial;
 	font-size: 25px;
 	padding: 10px;
+	font-weight: 900;
 
 }
 
@@ -62,10 +64,11 @@ body{
 	font-family: Arial;
 	font-size: 25px;
 	padding: 10px;
+	font-weight: 900;
 
 }
 
-.navbar2ul{
+.navbar2 ul{
 	list-style: none;
 }
 
@@ -96,6 +99,7 @@ body{
 	font-weight: 700;
 	padding: 10px;
 	margin-left: 80px;
+	text-align: center;
 }
 .Cupon1{
 	grid-area: Cupon1;
@@ -128,18 +132,22 @@ body{
 	grid-area: footer;
 	display: grid;
 	grid-template: "textoo" auto
-	               "ubicacion" auto/
+	                "ubicacion" auto/
 	                auto;
-color: lightgray;                
+    color: lightgray; 
+    text-align: center;               
 }
 
 .textoo{
 	grid-area: textoo;
+	width: 100%;
 
 }
 
 .ubicacion{
 	grid-area: ubicacion;
+	margin-right: 0;
+	width: 100%;
 }
 
 
@@ -168,7 +176,7 @@ justify-content: center;
 }
 
 .titulo{
-	text-align: none;
+	text-align: left;
 }
 
 .footer{
@@ -212,7 +220,7 @@ justify-content: center;
 	font-size: 21px;
 	padding: 40px;
 	color: #F58633;
-	font-weight: 500;
+	font-weight: 600;
 
 }
 
@@ -220,7 +228,7 @@ justify-content: center;
 	font-size: 21px;
 	padding: 40px;
 	color: #F58633;
-	font-weight: 500;
+	font-weight: 600;
 }
 
 .logo{
@@ -229,25 +237,30 @@ margin-top: 5px;
 
 .Cupon1 img{
 	width: 100%;
+	padding: 10px;
+	margin-bottom: 60px;
 }
 
 .Cupon2 img{
 	width: 100%;
+	padding: 10px;
 }
 
 .Cupon3 img{
 	width: 100%;
+	padding: 10px;
 }
 
 .titulo{
 		padding: 10px;
 	margin-left: 40px;
+	text-align: left;
 }
 
 .footer{
 	grid-area: footer;
 	display: grid;
-	grid-template: "textoo ubicacion" auto/
+	grid-template: "textoo ubicacion" auto
 	                auto auto;
 	padding: 10px;
 
@@ -269,5 +282,7 @@ margin-top: 5px;
 .ubicacion p{
 	padding: 5px;
 }
+ 
 }
+
 
