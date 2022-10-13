@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.2rem;
+	min-height: 100%; 
+	background-color: #4854A3;
+	 
+}
+
+.grid_container{
+	display: grid;
+	gap: 5px;
+	grid-template: 
+	"header" 100px
+	"main"	auto
+	"titulo"auto
+	"Cupon1" auto
+	"Cupon2" auto
+	"Cupon3" auto
+	"footer" auto
+	;
+}
+
+.header{
+	grid-area: header;
+	display: flex;
+}
+.logo{
+	grid-area: logo;
+}
+
+
+
+
+.navbar{
+	grid-area: navbar;
+	font-family: Arial;
+	font-size: 25px;
+	padding: 10px;
+
+}
+
+.navbar ul{
+	list-style: none;
+}
+
+.navbar li{
+	display: inline-block;
+}
+
+.navbar2{
+	grid-area: navbar2;
+	font-family: Arial;
+	font-size: 25px;
+	padding: 10px;
+
+}
+
+.navbar2ul{
+	list-style: none;
+}
+
+.navbar2 li{
+	display: inline-block;
+}
+
+
+.main{
+	grid-area: main;
+
+}
+
+.main img{
+	width: 100%;
+
+}
+
+.mrchimiburgerfoto{
+	width: 99%;
+}
+
+.titulo{
+	grid-area: titulo;
+	font-family: Arial;
+	font-size: 23px;
+	color: #F58633;
+	font-weight: 700;
+	padding: 10px;
+	margin-left: 80px;
+}
+.Cupon1{
+	grid-area: Cupon1;
+}
+
+.Cupon1 img{
+	width: 100%;
+}
+
+.Cupon2{
+	grid-area: Cupon2;
+}
+
+.Cupon2 img{
+	width: 100%;
+}
+
+.Cupon3{
+	grid-area: Cupon3;
+
+}
+
+.Cupon3 img{
+	width: 100%;
+}
+
+
+.footer{
+	background-color: #182B6E;
+	grid-area: footer;
+	display: grid;
+	grid-template: "textoo" auto
+	               "ubicacion" auto/
+	                auto;
+color: lightgray;                
+}
+
+.textoo{
+	grid-area: textoo;
+
+}
+
+.ubicacion{
+	grid-area: ubicacion;
+}
+
+
+@media (min-width: 768px) {
+    .Cupon3{ display: none;
+    }
+
+
+	.grid_container{
+
+		grid-template: 
+		"header header" 	auto
+		 "main main" auto
+		 "titulo titulo" auto
+		 "Cupon1 Cupon2"auto
+		"footer footer" 	auto /
+		 auto 		auto;
+ 	}
+
+.header{
+display: grid;
+grid-template: "navbar logo navbar2" auto/
+               auto   auto auto;
+justify-content: center;
+
+}
+
+.titulo{
+	text-align: none;
+}
+
+.footer{
+	padding-left: 60px;
+	padding-right: 60px;
+	grid-area: footer;
+	display: grid;
+	grid-template: "textoo ubicacion" auto/
+	                auto auto;
+	                
+}
+
+}
+
+
+@media (min-width: 992px) {
+    .Cupon3{ display: block;
+    }
+
+	.grid_container{
+		grid-row-gap: 15px;
+		grid-template: 
+		"header header header" auto
+		"main main main" auto
+		"titulo titulo titulo"auto
+		"Cupon1 Cupon2 Cupon3" auto
+		"footer footer 	footer" 	auto /
+		auto auto auto;
+	}
+.header{
+display: grid;
+grid-template: "navbar logo navbar2" auto/
+               auto   auto auto;
+
+justify-content: center;
+
+}
+}
+ 
+.navbar{
+	font-size: 21px;
+	padding: 40px;
+	color: #F58633;
+	font-weight: 500;
+
+}
+
+.navbar2{
+	font-size: 21px;
+	padding: 40px;
+	color: #F58633;
+	font-weight: 500;
+}
+
+.logo{
+margin-top: 5px;
+}
+
+.Cupon1 img{
+	width: 100%;
+}
+
+.Cupon2 img{
+	width: 100%;
+}
+
+.Cupon3 img{
+	width: 100%;
+}
+
+.titulo{
+		padding: 10px;
+	margin-left: 40px;
+}
+
+.footer{
+	grid-area: footer;
+	display: grid;
+	grid-template: "textoo ubicacion" auto/
+	                auto auto;
+	padding: 10px;
+
+}
+
+.textoo{
+	width: 65%;
+	text-align: center;
+	padding-bottom: 10px;
+	margin-left: 40px;
+}
+
+.ubicacion{
+	text-align: center;
+	margin-right: 140px;
+	margin-top: 5px;
+}
+
+.ubicacion p{
+	padding: 5px;
+}
+}
+
